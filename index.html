@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SUNNY STORES</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">Sunny Stores</a>
+        </div>
+        <div class="nav_menu_btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+      <div class="nav__search" id="nav-search">
+        <input type="text" placeholder="Search" />
+        <span><i class="ri-search-2-line"></i></span>
+      </div>
+    </nav>
+
+    <header class="section_container header_container" id="home">
+      <div class="header__image">
+        <img src="sn.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Welcome to Sunny Stores</h1>
+          <p>
+            We will help you to make an elegant and branded products for you.
+            
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="section_container deals_container">
+      <div class="deals__card">
+        <h2 class="section__header">Hot 🔥 deals for you</h2>
+        <p>Online shopping for retail sales direct to consumers</p>
+      </div>
+      <div class="deals__card">
+        <span><i class="ri-cash-line"></i></span>
+        <h4>1.5% cashback</h4>
+        <p>Earn a 5% cashback reward on every furniture purchase you make!</p>
+      </div>
+      <div class="deals__card">
+        <span><i class="ri-calendar-schedule-line"></i></span>
+        <h4>30 day terms</h4>
+        <p>
+          Take advantage of our 30-day payment terms, completely interest-free!
+        </p>
+      </div>
+      <div class="deals__card">
+        <span><i class="ri-money-rupee-circle-line"></i></span>
+        <h4>Save money</h4>
+        <p>
+          Discover unbeatable prices and save big money on top-branded
+          produtcs.
+        </p>
+      </div>
+    </section>
+
+    <section class="section_container about_container" id="about">
+      <div class="about__header">
+        <div>
+          <h2 class="section__header">About us</h2>
+          <p class="section__description">
+            Our passion for exceptional craftsmanship drives us to curate the
+            best pieces for you.
+          </p>
+        </div>
+        <button class="about__btn">Learn More</button>
+      </div>
+      <div class="about__content">
+        <div class="about__image">
+          <img src="sun.jpeg" alt="about" />
+        </div>
+        <div class="about__grid">
+          <div class="about__card">
+            <h3>1.</h3>
+            <h4>Who we are</h4>
+            <p>
+              You get a 2-week free trail to kick the Smaert tries. We want you
+              to.
+            </p>
+          </div>
+          <div class="about__card">
+            <h3>2.</h3>
+            <h4>What do we do</h4>
+            <p>
+              We give you a free course that guides you through the process.
+            </p>
+          </div>
+          <div class="about__card">
+            <h3>3.</h3>
+            <h4>How do we help</h4>
+            <p>Use our multimedis lectures, videos, and coaching sessions.</p>
+          </div>
+          <div class="about__card">
+            <h3>4.</h3>
+            <h4>Create success story</h4>
+            <p>
+              With access to online learning resources anyone can transform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_container product_container" id="product">
+      <h2 class="section__header">Products</h2>
+      <div class="product__grid">
+        <div class="product__card">
+          <h4>IQz9</h4>
+          <p>$30.00</p>
+          <img src="iqz9.jpeg" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>OnePlus 9</h4>
+          <p>$42.00</p>
+          <img src="oneplus9.jpeg" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>Samsung S10</h4>
+          <p>$55.00</p>
+          <img src="s241.jpeg" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>Oppo Reno 6</h4>
+          <p>$35.00</p>
+          <img src="opporeno6.jpeg" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>I Phone 15</h4>
+          <p>$95.00</p>
+          <img src="basic.jpeg" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>I Phone 15max pro</h4>
+          <p>$150.00</p>
+          <img src="pro max.jpeg" alt="product" />
+
+         
+        </div>
+      </div>
+    </section>
+
+    <div class="cart">
+      <h1>Your Cart</h1>
+      <ul id="cart-items">
+          <!-- Items will be added dynamically here -->
+      </ul>
+      <div class="total">
+          <span>Total: $<span id="total-price">0.00</span></span>
+      </div>
+      <button id="checkout-btn">Checkout</button>
+  </div>
+
+  <div id="checkout-modal" class="modal">
+      <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Checkout</h2>
+          <form id="checkout-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required>
+              
+              <label for="card-number">Card Number:</label>
+              <input type="text" id="card-number" required>
+              
+              <label for="expiry-date">Expiry Date:</label>
+              <input type="text" id="expiry-date" placeholder="MM/YY" required>
+              
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" required>
+              
+              <button type="submit">Submit Payment</button>
+          </form>
+      </div>
+  </div>
+
+
+    <section class="section_container client_container">
+      <div class="client__content">
+        <h2 class="section__header">What our happy client say</h2>
+        <p class="section__description">
+          Testimonials Highlighting Our Commitment to Quality, Exceptional
+          Service, and Customer Satisfaction
+        </p>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="user1.jpg" alt="user" />
+                <div>
+                  <p>
+                    Sunny.stores transformed with their beautiful products
+                    and affordable prices. The 5% cashback was a delightful
+                    bonus!
+                  </p>
+                  <h4>Sunny Dj</h4>
+                  <h5>Chairman</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="ceo.jpg" alt="user" />
+                <div>
+                  <p>
+                    Customers comfort is our main Satisfaction
+                  </p>
+                  <h4>MOHITH VARMA</h4>
+                  <h5>CEO - Sunny Stores</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="client__card">
+                  <img src="hr.jpg" alt="user" />
+                  <div>
+                    <p>
+                      Exceptional quality and service! The products is stunning,
+                      and the 30-day payment terms made it incredibly convenient.
+                    </p>
+                    <h4>SRIKAR GOSUKONDA</h4>
+                    <h5>HR</h5>
+                  </div>
+                </div>
+              </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section_container footer_container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">SunnyStores</a>
+          </div>
+          <p>
+            Join us in transforming your accessories that
+            blends elegance and practicality seamlessly.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul class="footer__links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Payrol</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <ul class="footer__links">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Cancelation Policy</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Sunny Stores. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
